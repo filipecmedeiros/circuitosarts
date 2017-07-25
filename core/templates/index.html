@@ -1,0 +1,269 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Filipe Medeiros">
+
+    <title>Circuitos</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="{% static 'css/grayscale.min.css' %}" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header" >
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top" >
+                    <p class="light" style="font-family: 'arciform_sansregular'; text-transform:lowercase;"> circuitos</p>
+                    <!--<img class="light" src="img/mini-logo.png">-->
+                    <!--<i class="fa""></i> <span class="light">circuitos</span>-->
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Sobre</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Serviços</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <!-- <h1 class="brand-heading">Grayscale</h1> -->
+                        <img src="{% static 'img/logo.png' %}">
+                    </div>
+
+                <div class="row">
+
+                    <div class="col-md-8 col-md-offset-2">
+                    <p class="intro-text"> Música e negócios em todo lugar</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Sobre a Circuitos</h2>
+                <br/>
+                <br/>
+                <br/>          
+                <p>A <span style="font-family: 'arciform_sansregular'; color: #FECB0B">circuitos</span> é uma startup que desenvolve soluções para o mercado de música ao vivo, conectando artistas, produtores e espaços que ofertam apresentações ao vivo, de forma prática, objetiva e segura.</p>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <section id="download" class="content-section text-center">
+
+            <div class="container">
+                <div class="row">
+                        <h2>Serviços</h2>
+                        <div class="col-sm-6">
+                            <h4> <span style="color: #FECB0B">Benefícios aos </span>artistas</h4>
+                            <ul>
+                                <li>Possiblidade de realizar mais shows;</li>
+                                <li>Possibilidade de trabalhar com cachês diferenciados;</li>
+                                <li>Segurança e praticidade na contratação;</li>
+                                <li>Apoio na produção profissional do material de divulgação;</li>
+                            </ul>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#modal-artista">Cadastre-se já como artista!</a>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <h4> <span style="color: #FECB0B">Benefícios aos </span>espaços</h4>
+                            <ul>
+                                <li>Renovação do público através de novos eventos;</li>
+                                <li>Acesso a bandas e artistas diversificados;</li>
+                                <li>Segurança e praticidade na contratação;</li>
+                                <li>Curadoria em função do perfil do público que frequenta o espaço;</li>
+                                <li>Possibilidade de economizar na contratação de novos artistas;</li>
+                                <li>Possibilidade de criar eventos diversificados.</li>
+                            </ul>
+                            <br/>
+                            <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#modal-espaco">Cadastre já seu espaço!</a>
+                        </div>                  
+                    </div>
+                </div>
+    </section>
+    <br/>
+    <img src="{% static 'img/photo3.jpg' %}" class="img-responsive">
+    
+
+<!-- Modals -->
+    <div class="modal fade" id="modal-artista">
+        <div class="modal-dialog">
+             <div class="modal-content" style="background: #000">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                     <h4 class="modal-title" style="color: #FECB0B">Cadastro de artista</h4>
+                 </div>
+                 <div class="modal-body">
+                    {% comment %}
+                    <form class="form-inline" action="" method="POST">
+                        {% csrf_token %}
+                        <fieldset>
+                            {% for field in artist_form %}
+                                <div class="{%if field.errors %} has-error {% endif %}">
+                                    <label for="{{ field.auto_id }}" class="col-md-3 control-label">{{ field.label }}</label>
+                                    {% render_field field class='form-control' %}
+                                    {% for error in field.errors %}
+                                        <span class="help-block">{{error}}</span>
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                            <button type="submit" class="btn btn-default">Enviar</button>
+                        </fieldset>
+                    </form>
+                    {% endcomment %}
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-espaco">
+        <div class="modal-dialog">
+             <div class="modal-content" style="background: #000">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                     <h4 class="modal-title" style="color: #FECB0B">Cadastro de espaço</h4>
+                 </div>
+                 <div class="modal-body">
+                    {% comment %}
+                    <form class="form-inline" action="" method="POST">
+                        {% csrf_token %}
+                        <fieldset>
+                            {% for field in club_form %}
+                                <div class="{%if field.errors %} has-error {% endif %}">
+                                    <label for="{{ field.auto_id }}" class="col-md-3 control-label">{{ field.label }}</label>
+                                    {% render_field field class='form-control' %}
+                                    {% for error in field.errors %}
+                                        <span class="help-block">{{error}}</span>
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                            <button type="submit" class="btn btn-default">Enviar</button>
+                        </fieldset>
+                    </form>
+                    {% endcomment %}
+                </div>
+             </div>
+        </div>
+    </div>
+
+<!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco, tire dúvidas e agende já uma visita</p>
+                <p><a href="mailto:contato@circuitosartes.com">circuitosarts@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons" style="text-align: center;">
+                    <li>
+                        <a href="https://facebook.com/circuitosarts" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/circuitosarts" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    
+    <!-- jQuery -->
+    <script src="{% static 'vendor/jquery/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="{% static 'js/grayscale.min.js' %}"></script>
+
+</body>
+
+</html>
