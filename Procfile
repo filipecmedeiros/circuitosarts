@@ -1,0 +1,1 @@
+web: gunicorn circuitosartes.wsgi --log-file -
