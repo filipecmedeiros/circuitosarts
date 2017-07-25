@@ -26,7 +26,7 @@
     <!-- Theme CSS -->
     <link href="{% static 'css/grayscale.min.css' %}" rel="stylesheet">
 
-
+    <link rel="icon" href="{% static '/img/favicon.ico' %}" type="image/x-icon"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,8 +46,8 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top" >
-                    <p class="light" style="font-family: 'arciform_sansregular'; text-transform:lowercase;"> circuitos</p>
-                    <!--<img class="light" src="img/mini-logo.png">-->
+                    <!-- <p class="light" style="font-family: 'arciform_sansregular'; text-transform:lowercase;"> circuitos</p>-->
+                    <img class="light" src="{% static 'img/mini-logo.png' %}">
                     <!--<i class="fa""></i> <span class="light">circuitos</span>-->
                 </a>
             </div>
@@ -75,13 +75,14 @@
         <!-- /.container -->
     </nav>
 
+    {% comment %}
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
             <div class="container">
-                <div class="row">
+                
+                <!--<div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <!-- <h1 class="brand-heading">Grayscale</h1> -->
                         <img src="{% static 'img/logo.png' %}">
                     </div>
 
@@ -94,8 +95,52 @@
                         </a>
                     </div>
                 </div>
+            </div> -->
+        </div>
+    </header>
+    {% endcomment %}
+        <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill">
+                    <img class="img-responsive" src="{% static '/img/intro-bg1.jpg' %}">
+                </div>
+                <div class="carousel-caption">
+                    <!--<p>Caption 1</p>-->
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill">
+                    <img class="img-responsive" src="{% static '/img/intro-bg2.jpg' %}">
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill">
+                    <img class="img-responsive" src="{% static '/img/intro-bg3.jpg' %}">
+                </div>
             </div>
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
     </header>
 
     <!-- About Section -->
